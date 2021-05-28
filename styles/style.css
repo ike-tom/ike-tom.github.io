@@ -62,6 +62,7 @@ body, html {
 }
 
 .unit-time__number {
+    position: relative;
     width: 60px;
     height: 60px;
     margin: 0 .6rem;
@@ -72,6 +73,27 @@ body, html {
     background: linear-gradient(#2e2c44 50%, #32374d 50%);
     border-radius: 7px;
     box-shadow: 0px 6px 2px black;
+    overflow: hidden;
+}
+
+.circle {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    background-color: black;
+    z-index: 2;
+    top: 50%;
+}
+
+.circle--left {
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.circle--right {
+    right: 0;
+    transform: translate(50%, -50%);
 }
 
 .unit-time {
