@@ -140,6 +140,11 @@ body, html {
 .footer__social-media-icon {
     font-size: 1.8rem;
     color: hsl(237, 18%, 59%);
+    transition: .5s;
+}
+
+.footer__social-media-icon:hover {
+    color: rgba(251, 96, 135, .8);
 }
 
 .attribution {
@@ -152,6 +157,11 @@ body, html {
 .attribution a {
     color: hsl(228, 45%, 44%);
     text-decoration: none;
+    transition: .5s;
+}
+
+.attribution a:hover {
+    color: rgba(251, 96, 135, .8);
 }
 
 @media (min-width: 768px) {
