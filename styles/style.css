@@ -1,3 +1,35 @@
+/* COMMON */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'Red Hat Text', sans-serif;
+    background-color: grey;
+}
+
+/* END OF COMMMON */
+
+/* HEADER */
+
+.header-container {
+    width: 80%;
+    margin: 7rem auto 0 auto;
+}
+
+.header {
+    text-align: center;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 100%);
+    font-size: 22px;
+    letter-spacing: 4px;
+}
+
+/* END OF HEADER */
+
+/* FOOTER */
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -6,3 +38,5 @@
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+/* END OF FOOTER */
