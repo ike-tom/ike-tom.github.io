@@ -15,7 +15,7 @@ body, html {
 
 .header-container {
     width: 80%;
-    margin: 7rem auto 0 auto;
+    margin: 11.5rem auto 0 auto;
 }
 
 .header {
@@ -27,6 +27,41 @@ body, html {
 }
 
 /* END OF HEADER */
+
+/* TIMER */
+
+.timer-container {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.unit-time__number {
+    width: 70px;
+    height: 70px;
+    margin: 0 .6rem;
+    color: rgba(251, 96, 135, .8);
+    text-align: center;
+    line-height: 70px;
+    font-size: 40px;
+    background: linear-gradient(#2e2c44 50%, #32374d 50%);
+    border-radius: 7px;
+    box-shadow: 0px 6px 2px black
+}
+
+.unit-time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.unit-time__description {
+    color: hsl(237, 18%, 59%);
+    text-transform: uppercase;
+    font-size: 10px;
+}
 
 /* FOOTER */
 
