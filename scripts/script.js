@@ -5,12 +5,11 @@ const init = function () {
     const minute = 1000 * 60
     const hour = minute * 60
     const day = hour * 24
-    const unitsCounter = document.querySelectorAll(".unit-time__number")
-    const daysCounter = unitsCounter[0]
-    const hoursCounter = unitsCounter[1]
-    const minutesCounter = unitsCounter[2]
-    const secondsCounter = unitsCounter[3]
 
+    const daysCounter = document.querySelector(".unit-time__number--days").childNodes[0]
+    const hoursCounter = document.querySelector(".unit-time__number--hours").childNodes[0]
+    const minutesCounter = document.querySelector(".unit-time__number--minutes").childNodes[0]
+    const secondsCounter = document.querySelector(".unit-time__number--seconds").childNodes[0]
 
     const calculateTimeRemaining = function () {
         const timeNow = Date.now();
@@ -28,10 +27,10 @@ const init = function () {
             const minutesRemaining = Math.floor((timeRemaining - daysRemaining * day - hoursRemaining * hour) / minute)
             const secondsRemaining = Math.floor((timeRemaining - daysRemaining * day - hoursRemaining * hour - minutesRemaining * minute) / second)
 
-            daysCounter.innerText = showDoubleDigit(daysRemaining)
-            hoursCounter.innerText = showDoubleDigit(hoursRemaining)
-            minutesCounter.innerText = showDoubleDigit(minutesRemaining)
-            secondsCounter.innerText = showDoubleDigit(secondsRemaining)
+            daysCounter.textContent = showDoubleDigit(daysRemaining)
+            hoursCounter.textContent = showDoubleDigit(hoursRemaining)
+            minutesCounter.textContent = showDoubleDigit(minutesRemaining)
+            secondsCounter.textContent = showDoubleDigit(secondsRemaining)
         }
     }
     const counter = setInterval(calculateTimeRemaining, 1000)
