@@ -66,6 +66,7 @@ body, html {
     width: 60px;
     height: 60px;
     margin: 0 .6rem;
+    font-family: 'Roboto Mono', monospace;
     color: rgba(251, 96, 135, .8);
     text-align: center;
     line-height: 60px;
