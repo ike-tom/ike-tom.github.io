@@ -1,6 +1,6 @@
 "use strict"
 const init = function () {
-    const endOfTime = new Date('08/28/2021 8:000 PM');
+    const endOfTime = new Date(Date.now() + 12096e5)
     const second = 1000
     const minute = 1000 * 60
     const hour = minute * 60
